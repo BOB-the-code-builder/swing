@@ -56,17 +56,15 @@ function draw() {
   bob3.display();
   bob4.display();
   bob5.display();
-  if (keyWentDown(UP_ARROW)) {
-		
-	Vforce()
-	console.log("hi")
-}
+ 
 }
 
-function Vforce() {
-	
+
+function keyPressed() {
+	if (keyCode===UP_ARROW) {
 		console.log("hi")
-	Matter.Body.applyForce(bob1,{x:0,y:0},{x:0.5,y:0});
-
+	Matter.Body.applyForce(bob1.body,{x:0,y:0},{x:-50,y:-0.005});
+	}
+	
 
 }
